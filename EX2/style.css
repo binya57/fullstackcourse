@@ -1,0 +1,14 @@
+.headline {
+    color: darkblue; font-size: 30px;
+}
+label {
+     color: royalblue; font-weight: bold;
+}
+#button {
+    background-color: black; color: white;
+    height: 40px;
+    width: 90px;
+}
+fieldset {
+    border-color: yellow;
+}
