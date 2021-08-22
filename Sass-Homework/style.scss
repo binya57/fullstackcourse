@@ -1,0 +1,16 @@
+@import "./assets.scss";
+@import "./Header.scss";
+@import "./Sections.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 35%;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+}

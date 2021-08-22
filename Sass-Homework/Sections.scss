@@ -1,0 +1,30 @@
+section {
+  @include flex-box();
+  padding: 5%;
+  div {
+    padding: 1%;
+  }
+  img {
+  }
+}
+
+section:nth-child(1) {
+  font-family: $mainFont;
+  background-color: rgb(206, 245, 213);
+}
+
+section:nth-child(2) {
+  font-family: $subFont;
+  background-color: rgb(20 79 61);
+  flex-direction: row-reverse;
+  div {
+    width: 50%;
+  }
+}
+
+section:nth-child(3) {
+  flex-direction: column;
+  text-align: center;
+  font-family: $mainFont;
+  background: linear-gradient(to top, #76b852, #8dc26f);
+}

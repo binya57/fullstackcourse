@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&family=Roboto&display=swap");
+
+.color-invert {
+  border: 1px solid black;
+  color: black;
+  &:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+  }
+}
+
+header {
+  @include flex-box();
+  margin: 0 auto;
+  border-bottom: 0.5em double black;
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+
+  img {
+    max-width: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+  }
+
+  nav {
+    width: 20%;
+    @include flex-box();
+    justify-content: space-evenly;
+    span {
+      @include rounded();
+      @extend .color-invert;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    span {
+      font-size: 48px !important;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+$mainFont: "Klee One", cursive;
+$subFont: "Roboto", sans-serif;
+
+@mixin flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin rounded {
+  border-radius: 50%;
+  padding: 5%;
+}
