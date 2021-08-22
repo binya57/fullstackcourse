@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&family=Roboto&display=swap");
+.color-invert, header nav span {
+  border: 1px solid black;
+  color: black;
+}
+.color-invert:hover, header nav span:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 0.5em double black;
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+header img {
+  max-width: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+}
+header nav {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header nav span {
+  border-radius: 50%;
+  padding: 5%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  nav span {
+    font-size: 48px !important;
+  }
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5%;
+}
+section div {
+  padding: 1%;
+}
+section:nth-child(1) {
+  font-family: "Klee One", cursive;
+  background-color: #cef5d5;
+}
+
+section:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  background-color: #144f3d;
+  flex-direction: row-reverse;
+}
+section:nth-child(2) div {
+  width: 50%;
+}
+
+section:nth-child(3) {
+  flex-direction: column;
+  text-align: center;
+  font-family: "Klee One", cursive;
+  background: linear-gradient(to top, #76b852, #8dc26f);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 35%;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
