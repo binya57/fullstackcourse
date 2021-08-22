@@ -1,0 +1,85 @@
+* {
+  font-family: sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+ul {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 0;
+  list-style-position: inside;
+  background-color: rgb(13 52 84);
+}
+
+li {
+  font-size: 1.4em;
+  margin-left: 10px;
+}
+
+ul > div {
+  display: flex;
+  margin: 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(187, 186, 186);
+  border-radius: 10px;
+  padding: 10px 10px 10px 0;
+}
+
+ul > div:hover {
+  background-color: grey;
+}
+
+label {
+  font-size: larger;
+  text-decoration-line: underline;
+}
+
+.btn {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: green;
+  font-size: 1.1rem;
+  margin: 5px;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #1ac61a;
+  border-color: #1ac61a;
+}
+
+.btn.danger {
+  background-color: red;
+  color: ghostwhite;
+}
+
+.btn.danger:hover {
+  color: red;
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+ul > div > .btn.danger {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+#newTask {
+  margin: 5px;
+}
