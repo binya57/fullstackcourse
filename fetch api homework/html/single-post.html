@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/single-post.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="loader"></div>
+    <div id="main-container">
+      <a class="return-link btn" href="./blog.html"> back to main page </a>
+      <div id="post-wrapper">
+        <span id="post-index">Post number:</span>
+        <h3 id="post-title">title:</h3>
+        <span id="post-author">author:</span>
+        <p id="post-content"></p>
+      </div>
+      <div id="create-comment">
+        <h3>post a comment:</h3>
+        <fieldset>
+          <legend>comment title:</legend>
+          <input type="text" name="title" id="title" />
+        </fieldset>
+        <fieldset>
+          <legend>your email:</legend>
+          <input type="text" name="email" id="email" />
+        </fieldset>
+        <fieldset>
+          <legend>your comment:</legend>
+          <textarea name="content" id="content" cols="30" rows="5"></textarea>
+        </fieldset>
+        <button class="btn publish" id="publish">post</button>
+      </div>
+      <div id="comments-wrapper">
+        <h3 id="comm">Comment Section:</h3>
+      </div>
+    </div>
+
+    <script src="../js/single.js"></script>
+  </body>
+</html>

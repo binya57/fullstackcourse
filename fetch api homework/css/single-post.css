@@ -1,0 +1,142 @@
+#main-container {
+  display: none;
+  background-color: lightcyan;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  background-color: rgb(58, 58, 231);
+  color: white;
+  border-radius: 30px;
+  border: 2.5px solid #009688;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgb(58, 58, 231);
+  background-color: #f3f3f3;
+  border-color: rgb(58, 58, 231);
+}
+
+.return-link {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 1%;
+  margin-bottom: 1%;
+  position: sticky;
+  top: 5px;
+}
+
+#post-wrapper {
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+#post-index {
+  text-decoration: underline;
+}
+
+#post-title {
+  font-style: italic;
+}
+
+#post-author {
+}
+
+#post-title {
+}
+
+#post-content {
+}
+
+#create-comment {
+  margin: 20px 0;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+#comments-wrapper {
+}
+
+.btn.publish {
+  margin: 0 auto;
+  font-size: 1.1em;
+  padding: 5px;
+  width: 10%;
+}
+
+fieldset {
+  border: none;
+}
+
+.comment-container {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.comment-index {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 50%;
+  min-width: 20px;
+  max-width: max-content;
+  height: 20px;
+  text-align: center;
+  margin: 5px calc(50% - 20px) 5px;
+  padding: 2px;
+  background-color: white;
+}
+
+.comment-title {
+  border: solid black;
+  border-width: 1px 0;
+  text-align: center;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.comment-email {
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.comment-body {
+}
+
+/* loader: */
+#loader {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+#loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/blog-style.css" />
+    <title>1st Homework</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to my blog</h1>
+      <h3>click on a post's title to view it's content</h3>
+    </header>
+    <main>
+      <button class="btn" id="create-post">Create Post</button>
+      <div id="overlay">
+        <div id="new-post-modal">
+          <button id="close-modal"></button>
+          <h2>Post Details</h2>
+          <fieldset>
+            <legend>your name:</legend>
+            <input type="text" id="new-name" />
+          </fieldset>
+          <fieldset>
+            <legend>post title:</legend>
+            <input type="text" id="new-title" />
+          </fieldset>
+          <fieldset>
+            <legend>post content:</legend>
+            <textarea
+              name="content"
+              id="new-content"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <button id="publish" class="btn">Post</button>
+        </div>
+      </div>
+      <div id="posts-wrapper">
+        <div id="loader"></div>
+      </div>
+      <span class="material-icons-outlined" id="return-to-top">
+        arrow_circle_up
+      </span>
+    </main>
+    <footer></footer>
+
+    <script src="../js/blog.js"></script>
+  </body>
+</html>
